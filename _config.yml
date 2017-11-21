@@ -1,7 +1,14 @@
 title: Cybersecurity Education and Research Center
+acronym: CEDAR
 description: University of Wyoming's Cybersecurity Education and Research Center
 
-google_analytics:
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://cs.uwyo.edu/~cedar" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: uwcedar
+github_username:  UWCEDAR
+
+# Build settings
+markdown: kramdown
 theme: cedar-theme
 
 contact:

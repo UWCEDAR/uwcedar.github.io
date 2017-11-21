@@ -1,5 +1,1 @@
-source 'https://rubygems.org'
-
-gemspec
-
-gem "cedar-theme"
+gem "cedar-theme", :path=>"./cedar-theme"
