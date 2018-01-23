@@ -9,7 +9,7 @@ github_username:  UWCEDAR
 
 # Build settings
 markdown: kramdown
-theme: cedar-theme
+theme: jekyll-theme-cayman
 
 contact:
   name: Dr. Mike Borowczak
