@@ -1,15 +1,16 @@
+#Naming variables
 title: Cybersecurity Education and Research Center
 acronym: CEDAR
 description: University of Wyoming's Cybersecurity Education and Research Center
 
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://cs.uwyo.edu/~cedar" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: uwcedar
 github_username:  UWCEDAR
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-cayman
+theme: jekyll-cayman-theme
 
 contact:
   name: Dr. Mike Borowczak
@@ -19,3 +20,8 @@ contact:
   street: 1000 E. University Ave.
   addr: Laramie, WY 82071
   email: cedar@cs.uwyo.edu
+
+author:
+  name:
+  url:
+#rc
