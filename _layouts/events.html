@@ -5,14 +5,17 @@
     <title>title</title>
   </head>
   <body>
-      {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+    {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+    {% assign nowunix = nowunix | plus: 0 %}
+    {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+
     <ul>
       <h1>{{ page.url }}</h1>
       {% for post in site.categories.event %}  
-        {% if post.date >= nowunix and page.url == "/upcomingevents.html" %}
+        {% if posttime > nowunix and page.url == "/upcomingevents.html" %}
             <li>{{ post.date }}|{{ post.title }}: {{ post.abstract }}-{{ post.category }}-{{ post.show }}</li>
         {% endif %}
-        {% if post.date < nowunix and page.url == "/pastevents.html" %}
+        {% if posttime < nowunix and page.url == "/pastevents.html" %}
             <li>{{ post.date }}|{{ post.title }}: {{ post.abstract }}-{{ post.category }}-{{ post.show }}</li>
         {% endif %}
       {% endfor %}
