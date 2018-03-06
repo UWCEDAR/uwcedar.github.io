@@ -5,8 +5,8 @@
     <title>title</title>
   </head>
   <body>
-    {% assign curr_date = site.time | date: "%Y-%m-%d" %}
-    {% capture post_date %}{{post.date | date: '%Y-%m-%d'}}{% endcapture %}
+    {% assign curr_date = site.time | date: '%s' %}
+    {% assign post_date = post.date | date: '%s' %}
 
     <ul>
       <h1>{{ page.url }}</h1>
