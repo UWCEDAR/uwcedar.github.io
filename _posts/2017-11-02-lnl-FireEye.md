@@ -7,8 +7,8 @@ date:   2017-11-02
 start-time: 12:00
 end-time: 13:00
 categories: [event]
-fullimg_url: "recruit.png"
-thumb_url: "recruit.png"
+fullimg_url: ""
+thumb_url: ""
 media_url: ""
 show: false
 ---
