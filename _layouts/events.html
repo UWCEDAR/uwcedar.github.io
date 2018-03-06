@@ -9,10 +9,10 @@
     <ul>
       <h1>{{ page.url }}</h1>
       {% for post in site.categories.event %}  
-        {% if post.date  > nowunix and page.url == "/upcomingevents.html" %}
+        {% if post.date > nowunix and page.url == "/upcomingevents.html" %}
             <li>{{ post.date }}|{{ post.title }}: {{ post.abstract }}-{{ post.category }}-{{ post.show }}</li>
         {% endif %}
-        {% if post.date <  nowunix and page.url == "/pastevents.html" %}
+        {% if post.date < nowunix and page.url == "/pastevents.html" %}
             <li>{{ post.date }}|{{ post.title }}: {{ post.abstract }}-{{ post.category }}-{{ post.show }}</li>
         {% endif %}
       {% endfor %}
