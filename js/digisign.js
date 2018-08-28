@@ -202,6 +202,7 @@ var main = (function($) { var _ = {
 						_.$body.removeClass('is-loading-2');
 					}, 100 + Math.max(_.settings.layoutDuration - 150, 0));
 
+					setInterval(()=>{$('.nav-next').trigger('click')},8000)
 				});
 
 			// Disable animations/transitions on resize.

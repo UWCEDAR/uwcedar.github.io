@@ -759,6 +759,7 @@
 
 			#main {
 				width: 19em;
+
 			}
 
 				body.fullscreen #main {
@@ -995,7 +996,7 @@
 		#viewer .upper{
 			height:300px;
 			background-image: url("/digisign/img/cedar_header.png");
-			background-size: 900px 300px;
+			background-size: 805px 270px;
 			background-repeat: no-repeat;
 		}
 		#viewer .inner {
@@ -1117,7 +1118,7 @@
 				width: 100%;
 				height: 100%;
 				background-repeat: no-repeat;
-				background-size: cover;
+				background-size: 805px 800px;
 				opacity: 0;
 			}
 
