@@ -1,0 +1,12 @@
+#viewer - hieght 80%
+body.fullscreen #main - right:0
+                          - visibility:visible
+#main - width:100%
+     - change top:0 to be bottom:0
+     - height:20%
+
+#thumbnails - display:none
+
+#viewer .upper - background-size:950px 300px;
+
+then fix js for .slide.active
