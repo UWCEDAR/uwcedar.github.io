@@ -6,6 +6,6 @@ date:   2017-10-20
 categories: [digisign, poster]
 fullimg_url: "Poster_datda-pipwn2.png"
 thumb_url: "Poster_datda-pipwn2.png"
-show: true
+show: false
 ---
 ## PiPwn2
