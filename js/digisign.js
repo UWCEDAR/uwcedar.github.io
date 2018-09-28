@@ -147,6 +147,7 @@ var main = (function($) { var _ = {
 
 		// Viewer.
 			_.$viewer = $(
+				'<center>'+
 				'<div id="viewer">' +
 					'<div class="upper">'+
 					'</div>'+
@@ -154,7 +155,8 @@ var main = (function($) { var _ = {
 						'<div class="nav-next"></div>' +
 						'<div class="nav-previous"></div>' +
 					'</div>' +
-				'</div>'
+				'</div>'+
+				'</center>'
 			).appendTo(_.$body);
 
 		// Nav.
