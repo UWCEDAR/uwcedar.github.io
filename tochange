@@ -1,12 +1,21 @@
-#viewer - hieght 80%
-body.fullscreen #main - right:0
-                          - visibility:visible
-#main - width:100%
-     - change top:0 to be bottom:0
-     - height:20%
+#viewer - hieght 80% ?
+
+#main - width:100%X
+     - change top:0 to be bottom:0X
+     - height:15emX
 
 #thumbnails - display:none
 
-#viewer .upper - background-size:950px 300px;
-
+#viewer - width:100%;X
+#viewer .upper - background-size:100% 300px;X
+#viewer .inner - left:10em;X
 then fix js for .slide.active
+
+.caption - display:none X
+
+ul.icons li display:block X
+
+
+
+
+https://devhints.io/jekyll (cheatsheet)
