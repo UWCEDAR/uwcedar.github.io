@@ -1,11 +1,11 @@
 ---
 layout: digisign
 title:  "CEDAR Open House"
-abstract: ""
+abstract: "CEDAR open house"
 date:   2019-06-28
 categories: [digisign, poster]
-fullimg_url: "CEDAR-OpenHouse-poster.png"
-thumb_url: "CEDAR-OpenHouse-poster.png"
+fullimg_url: "CEDAR-Open_House-poster.png"
+thumb_url: "CEDAR-Open_House-poster.png"
 show: true
 ---
-## CEDAR Open House 
+## CEDAR Open House
