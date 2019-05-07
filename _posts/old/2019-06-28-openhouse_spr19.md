@@ -6,6 +6,6 @@ date:   2019-06-28
 categories: [digisign, poster]
 fullimg_url: "CEDAR-Open_House-poster.png"
 thumb_url: "CEDAR-Open_House-poster.png"
-show: true
+show: false
 ---
 ## CEDAR Open House
