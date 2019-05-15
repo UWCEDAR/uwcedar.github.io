@@ -2,10 +2,10 @@
 layout: digisign
 title:  "SHARKS Research"
 abstract: "Example abstract"
-date:   2018-11-1
+date:   2019-5-14
 categories: [digisign, poster]
-fullimg_url: "/SHARKS.png"
-thumb_url: "/SHARKS.png"
+fullimg_url: "/SodukuZaxxon.png"
+thumb_url: "/SodukuZaxxon.png"
 show: true
 ---
-## SHARKS Research
+## Soduku/Zaxxon Research
