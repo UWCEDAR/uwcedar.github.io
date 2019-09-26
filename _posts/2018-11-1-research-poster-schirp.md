@@ -6,6 +6,6 @@ date:   2018-11-1
 categories: [digisign, poster]
 fullimg_url: "/SCHIRP.png"
 thumb_url: "/SCHIRP.png"
-show: true
+show: false
 ---
 ## SCHIRP Research
