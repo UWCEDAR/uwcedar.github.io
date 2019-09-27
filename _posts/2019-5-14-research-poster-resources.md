@@ -6,6 +6,6 @@ date:   2019-5-14
 categories: [digisign, poster]
 fullimg_url: "/Resources.png"
 thumb_url: "/Resources.png"
-show: true
+show: false
 ---
 ## Research Resources

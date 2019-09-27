@@ -6,6 +6,6 @@ date:   2019-5-14
 categories: [digisign, poster]
 fullimg_url: "/SudokuZaxxon.png"
 thumb_url: "/SudokuZaxxon.png"
-show: true
+show: false
 ---
 ## Soduku/Zaxxon Research
