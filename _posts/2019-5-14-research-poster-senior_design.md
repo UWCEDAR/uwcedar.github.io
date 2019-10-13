@@ -6,6 +6,6 @@ date:   2019-5-14
 categories: [digisign, poster]
 fullimg_url: "/SeniorDesign.png"
 thumb_url: "/SeniorDesign.png"
-show: false
+show: true
 ---
 ## Senior Design
