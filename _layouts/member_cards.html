@@ -20,13 +20,17 @@
             <img src="{{ site.baseurl }}/uwyo_site/member_imgs/mike-borowczak-bootstrapcard.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title text-center">Dr. Mike Borowczak</h5>
-              <p class="card-text text-center">Assistant Professor of Computer Science</p>
+              <p class="card-text text-center">Assistant Professor of Computer Science -- ??? EERB</p>
+              <p class="card-text text-center">Loy & Edith Harris Assistant Professor of Computer Science & CEDAR Director</p>
+              <p class="card-text text-center"><a href="mailto:mike.borowczak@uwyo.edu">mike.borowczak@uwyo.edu</a> -- <a href="http://www.uwyo.edu/cosc/cosc-directory/borowczak/index.html">Website</a></p>
+              <p class="card-text text-center">Mike's research interests include secure VLSI design automation, developing algorithms for secure communication originating in streaming and pseudo-streaming data sources (e.g. IoT, autonomous vehicles) while also developing authentic cyber learning experiences for K-20 students.</p>
             </div>
           </div><!--/card h-100-->
         </div><!--/col-->
       </center>
     </div>
     {% assign sorted_members = site.categories.members | sort: 'joined_date' %}
+    {% assign reverse_sorted_members = site.categories.members | sort: 'joined_date' | reverse %}
     <h2>Graduate Students</h2>
     <div class="row row-cols-1 row-cols-md-3 g-4">
       {% for post in sorted_members %}
@@ -75,7 +79,7 @@
 
     <h2>Alumni</h2>
     <div class="row row-cols-1 row-cols-md-3 g-4">
-      {% for post in sorted_members %}
+      {% for post in reverse_sorted_members %}
         {% if post.categories contains "alumni" and post.show==true %}
           <div class="col"><!--column-->
             <div class="card h-100"><!--card-->
