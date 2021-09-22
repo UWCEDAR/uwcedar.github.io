@@ -1,0 +1,3 @@
+---
+layout: member_cards
+---
