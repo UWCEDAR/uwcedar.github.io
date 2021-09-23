@@ -20,7 +20,8 @@
 
 				<!-- Thumbnail -->
 					<section id="thumbnails">
-            {% for post in site.categories.poster %}
+			{% assign sorted_posters = site.categories.poster | sort: 'date' %}
+            {% for post in sorted_posters %}
               {% if post.show == true %}
                 <article>
                   <a class="thumbnail" href="{{ site.baseurl }}/digisign/img/{{ post.fullimg_url }}" data-position="left center"><img src="{{ site.baseurl }}/digisign/img/{{ post.thumb_url }}" alt="" /></a>

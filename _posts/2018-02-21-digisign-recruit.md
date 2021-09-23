@@ -6,5 +6,5 @@ date:   2018-2-22
 categories: [digisign, poster]
 fullimg_url: "recruit.png"
 thumb_url: "recruit.png"
-show: true
+show: false
 ---
