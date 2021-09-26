@@ -11,8 +11,8 @@
     <title>CEDAR Members</title>
   </head>
   <body>
-
-    <div class="row row-cols-1 row-cols-md-1 g-4">
+    <center>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
       <center>
         <div class="col">
           <div class="card h-100">
@@ -29,6 +29,7 @@
         </div><!--/col-->
       </center>
     </div>
+  </center>
     {% assign sorted_members = site.categories.members | sort: 'joined_date' %}
     {% assign reverse_sorted_members = site.categories.members | sort: 'joined_date' | reverse %}
     <h2>Graduate Students</h2>
