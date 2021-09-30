@@ -1,11 +1,11 @@
 ---
-name:  "Michelle Bronstein"
+name:  "Jayden Parker Vap"
 membership: "Undergraduate Researcher"
 categories: [members, undergraduate_student]
 joined_date: 2018-09-01
 graduated_date: 2018-09-01
-projects: ["TODO"]
+projects: ["GenCyber", "Great Revolt"]
 interest_statement: "Statement"
-bootstrap_card_img_url: "/michelle-bronstein-bootstrapcard.jpg"
+bootstrap_card_img_url: "/jayden-parker-vap-bootstrapcard.jpg"
 show: true
 ---

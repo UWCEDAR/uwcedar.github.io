@@ -1,11 +1,11 @@
 ---
-name:  "Allyson Hays"
+name:  "Adeline Reichert"
 membership: "Undergraduate Researcher"
-categories: [members, undergraduate_student]
+categories: [members, alumni]
 joined_date: 2018-09-01
 graduated_date: 2018-09-01
-projects: ["TODO"]
+projects: ["ICS Security"]
 interest_statement: "Statement"
-bootstrap_card_img_url: "/allyson-hays-bootstrapcard.jpg"
+bootstrap_card_img_url: "/taylor-laforce-bootstrapcard.jpg"
 show: true
 ---
