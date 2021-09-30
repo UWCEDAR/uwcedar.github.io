@@ -11,8 +11,8 @@
     <title>CEDAR Members</title>
   </head>
   <body>
-
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <center>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
       <center>
         <div class="col">
           <div class="card h-100">
@@ -20,7 +20,7 @@
             <img src="{{ site.baseurl }}/uwyo_site/member_imgs/mike-borowczak-bootstrapcard.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title text-center">Dr. Mike Borowczak</h5>
-              <p class="card-text text-center">Assistant Professor of Computer Science -- ??? EERB</p>
+              <p class="card-text text-center">Assistant Professor of Computer Science -- 335C EERB</p>
               <p class="card-text text-center">Loy & Edith Harris Assistant Professor of Computer Science & CEDAR Director</p>
               <p class="card-text text-center"><a href="mailto:mike.borowczak@uwyo.edu">mike.borowczak@uwyo.edu</a> -- <a href="http://www.uwyo.edu/cosc/cosc-directory/borowczak/index.html">Website</a></p>
               <p class="card-text text-center">Mike's research interests include secure VLSI design automation, developing algorithms for secure communication originating in streaming and pseudo-streaming data sources (e.g. IoT, autonomous vehicles) while also developing authentic cyber learning experiences for K-20 students.</p>
@@ -29,6 +29,7 @@
         </div><!--/col-->
       </center>
     </div>
+  </center>
     {% assign sorted_members = site.categories.members | sort: 'joined_date' %}
     {% assign reverse_sorted_members = site.categories.members | sort: 'joined_date' | reverse %}
     <h2>Graduate Students</h2>
@@ -42,9 +43,9 @@
               <div class="card-body"><!--card body-->
                 <h5 class="card-title">{{ post.name }}</h5>
                 <p class="card-text">{{ post.interest_statement }}</p>
-                <p class="card-text">Projects: 
+                <p class="card-text">Projects:
                   {% for project in post.projects %}
-                    {{ project }}, 
+                    {{ project }},
                   {% endfor %}
                 </p>
               </div><!--/card body-->
@@ -65,9 +66,9 @@
               <div class="card-body"><!--card body-->
                 <h5 class="card-title">{{ post.name }}</h5>
                 <p class="card-text">{{ post.interest_statement }}</p>
-                <p class="card-text">Projects: 
+                <p class="card-text">Projects:
                   {% for project in post.projects %}
-                    {{ project }}, 
+                    {{ project }},
                   {% endfor %}
                 </p>
               </div><!--/card body-->
@@ -88,9 +89,9 @@
               <div class="card-body"><!--card body-->
                 <h5 class="card-title">{{ post.name }}</h5>
                 <p class="card-text">{{ post.interest_statement }}</p>
-                <p class="card-text">Projects: 
+                <p class="card-text">Projects:
                   {% for project in post.projects %}
-                    {{ project }}, 
+                    {{ project }},
                   {% endfor %}
                 </p>
                 <p class="card-text">Graduated: {{ post.graduated_date }}</p>
