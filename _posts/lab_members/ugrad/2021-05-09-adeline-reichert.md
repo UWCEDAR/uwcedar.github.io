@@ -1,7 +1,7 @@
 ---
 name:  "Adeline Reichert"
 membership: "Undergraduate Researcher"
-categories: [members, alumni]
+categories: [members]
 joined_date: 2018-09-01
 projects: ["WySLICE", "SecretAgent", "PacMan"]
 interest_statement: ""
