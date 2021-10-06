@@ -1,7 +1,7 @@
 ---
 name:  "Taylor LaForce"
 membership: "Undergraduate Researcher"
-categories: [members]
+categories: [members,undergraduate_student]
 joined_date: 2021-05-01
 projects: ["ICS Security"]
 interest_statement: "Statement"
