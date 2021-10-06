@@ -1,5 +1,5 @@
 ---
-name:  "Hussain"
+name:  "Sajjad Hussain Shah"
 membership: "Ph.D. Student"
 categories: [members, graduate_student]
 joined_date: 2021-09-01
