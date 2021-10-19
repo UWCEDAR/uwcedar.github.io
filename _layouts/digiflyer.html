@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include digihead.html %}
+
+  <body class="is-loading-0 is-loading-1 is-loading-2">
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Header -->
+                <header id="header">
+                    <h1>CEDAR Lab</h1>
+                    <p><b>C</b>ybersecurity <b>ED</b>ucation <b>A</b>nd <b>R</b>esearch Lab </p>
+                    <ul class="icons">
+                        <li><a href="#" class="icon fa-twitter"><span class="">UWCEDAR</span></a></li>
+                        <li><a href="#" class="icon fa-link"><span class="">UWYO.EDU/CEDAR</span></a></li>
+                    </ul>
+                </header>
+
+				<!-- Thumbnail -->
+                <section id="thumbnails">
+                    <article>
+                    <a class="thumbnail" href="{{ site.baseurl }}/digisign/img/{{ post.fullimg_url }}" data-position="left center"><img src="{{ site.baseurl }}/digisign/img/{{ post.thumb_url }}" alt="" /></a>
+                    <h2>{{ post.title }}</h2>
+                    <p>{{ post.abstract }}</p>
+                    </article>
+
+                </section>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{{ site.baseurl }}/js/jquery.min.js"></script>
+			<script src="{{ site.baseurl }}/js/skel.min.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="{{ site.baseurl }}/js/digisign.js"></script>
+      <!-- <script type="text/javascript">
+        setInterval(()=>{$('.nav-next').trigger('click')},8000)
+      </script> -->
+	</body>
+</html>
