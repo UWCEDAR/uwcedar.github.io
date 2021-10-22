@@ -1,0 +1,629 @@
+<!-- Protype for homecoming virtual poster, decided to simplify, but keep old in-progress version here. -->
+
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO -->
+    <title>CEDAR 2021 Virtual Poster</title>
+    <meta name="description" content="2021 highlights from the CEDAR lab!">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="{{ site.baseurl }}/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="{{ site.baseurl }}/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://your-url.com/permalink"> <!-- EDIT -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="WebSlides is the easiest way to create a portfolio website. It is free, fast, and fun"> <!-- EDIT -->
+    <meta property="og:description" content="The easiest way to create a portfolio website. It is free, fast, and fun."> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T17:26:50"> <!-- EDIT -->
+    <meta property="og:image" content="{{ site.baseurl }}/images/share-webslides.jpg" > <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@uwcedar"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+    <meta name="twitter:title" content="UW Cedar"> <!-- EDIT -->
+    <meta name="twitter:description" content="UW Cedar"> <!-- EDIT -->
+    <meta name="twitter:image" content="{{ site.baseurl }}/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="{{ site.baseurl }}/css/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="{{ site.baseurl }}/css/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="{{ site.baseurl }}/css/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="{{ site.baseurl }}/css/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="{{ site.baseurl }}/css/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="{{ site.baseurl }}/css/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="{{ site.baseurl }}/css/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  </head>
+  <body>
+    <header role="banner">
+      <nav role="navigation">
+        <p class="logo"><a href="{{ site.baseurl }}/index.html" title="UW Cedar">UW CEDAR</a></p>
+        <ul>
+          <li class="facebook">
+            <a rel="external" target="_blank" rel="noopener noreferrer" href="https://facebook.com/uwcedar" title="UW Cedar on Facebook">
+              <svg class="fa-github">
+                <use xlink:href="#fa-facebook"></use>
+              </svg>
+              <em>UW Cedar</em>
+            </a>
+          </li>
+          <li class="twitter">
+            <a rel="external" target="_blank" rel="noopener noreferrer" href="https://twitter.com/uwcedar" title="UW Cedar on Twitter">
+              <svg class="fa-twitter">
+                <use xlink:href="#fa-twitter"></use>
+              </svg>
+              <em>@WebSlides</em>
+            </a>
+          </li>
+          <li class="instagram">
+            <a rel="external" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/uwcedar/" title="UW Cedar on Instagram">
+              <svg class="fa-github">
+                <use xlink:href="#fa-instagram"></use>
+              </svg>
+              <em>UW Cedar</em>
+            </a>
+          </li>
+          <li class="LinkedIn">
+            <a rel="external" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/uwcedar/" title="UW Cedar on LinkedIn">
+              <svg class="fa-twitter">
+                <use xlink:href="#fa-linkedin"></use>
+              </svg>
+              <em>@WebSlides</em>
+            </a>
+          </li>
+          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <article id="webslides">
+
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <!-- Title Slide -->
+        <section>
+         <span class="background dark" style="background-image:url('{{ site.baseurl }}/images/movingbackground.gif')"></span>
+          <div class="wrap aligncenter">
+            <h1 class="text-landing" style="color: white">CEDAR Lab at a Glance</h1>
+            <p class="text-symbols">* * *</p>
+            <p>
+              <a class="button ghost" href="#slide=2" title="Explore" style="color: white; background-color: rgba(128, 128, 128, 0.336); border: white;">
+                Explore
+              </a>
+            </p>
+          </div>
+          </div>
+        </section>
+        <!-- Blocks with Links -->
+        <section class="bg-light">
+            <div class="wrap">
+              <h3>2021 CEDAR Lab at a Glance</h3>
+              <ul class="flexblock gallery">
+                <li>
+                  <a href="#slide=3" title="CEDAR Members">
+                    <figure>
+                      <img alt="" src="{{ site.baseurl }}/images/MembersVideo.gif">
+                      <figcaption>
+                        <h3>Multi-talented Team</h3>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                  <a href="#slide=4" title="Cutting edge research">
+                    <figure>
+                        <img src='{{ site.baseurl }}/images/Develop.png' onmouseover="this.src='{{ site.baseurl }}/images/Develop.gif';" onmouseout="this.src='{{ site.baseurl }}/images/Develop.png';" />
+                      <figcaption>
+                        <h3>15 Current Research Projects</h3>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                  <a href="#slide=5" title="New lab">
+                    <figure>
+                      <img src='{{ site.baseurl }}/images/labupgrade.png' onmouseover="this.src='{{ site.baseurl }}/images/labupgrade.gif';" onmouseout="this.src='{{ site.baseurl }}/images/labupgrade.png';" />
+                      <figcaption>
+                        <h3>We upgraded...</h3>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                <a href="#slide=6" title="Competitive Spirit">
+                    <figure>
+                    <img alt="" src="{{ site.baseurl }}/images/Competitive.png">
+                    <figcaption>
+                        <h3>We compete...</h3>
+                    </figcaption>
+                    </figure>
+                </a>
+                </li>
+                <li>
+                  <a href="#slide=7" title="Strong Student Involvement">
+                    <figure>
+                        <img src='{{ site.baseurl }}/images/DATDA-WiCyS.png' onmouseover="this.src='{{ site.baseurl }}/images/DATDA-WiCyS.gif';" onmouseout="this.src='{{ site.baseurl }}/images/DATDA-WiCyS.png';" />
+                      <figcaption>
+                        <h3>We're involved...</h3>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                  <a href="#slide=8" title="Outreach and Volunteer Work">
+                    <figure>
+                        <img src='{{ site.baseurl }}/images/Outreach.png' onmouseover="this.src='{{ site.baseurl }}/images/Outreach.gif';" onmouseout="this.src='{{ site.baseurl }}/images/Outreach.png';" />
+                      <figcaption>
+                        <h3>We volunteer...</h3>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                  <a href="#slide=9" title="Professional Development">
+                    <figure>
+                      <img src='{{ site.baseurl }}/images/ProfessionalDevelopmentStatic.png' onmouseover="this.src='{{ site.baseurl }}/images/ProfessionalDevelopment.gif';" onmouseout="this.src='{{ site.baseurl }}/images/ProfessionalDevelopmentStatic.png';" />
+                      <figcaption>
+                        <h3>We partner...</h3>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                    <a href="#slide=10" title="We're Growing!">
+                      <figure>
+                          <img src='{{ site.baseurl }}/images/Growing.png' onmouseover="this.src='{{ site.baseurl }}/images/Growing.gif';" onmouseout="this.src='{{ site.baseurl }}/images/Growing.png';" />
+                        <figcaption>
+                          <h3>... and our team is growing!</h3>
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+            <!-- .end .wrap -->
+          </section>
+        <!-- Team -->
+        <section class="bg-secondary">
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap size-50 frame">
+              <h2 class="text-serif aligncenter">Members placeholder</h2>
+              <p class="text-symbols">* * *</p>
+              <p>24 student researchers across 6+ different majorsLink to members page. <a href="#slide=2">Return to CEDAR at a glance.</a></p>
+            </div>
+          </section>
+          
+        <!-- Projects: Research Symposium--> 
+        <!-- other video option-->
+        <section class="background dark" style="background-image:url('{{ site.baseurl }}/images/movingbackground.jpg')">
+        <div class="wrap">
+            <h3>We research...</h3>
+            <p>Showcasing 15 current student-run collaborative research projects. (research symposium?)</p>
+            <div class="content-left">
+            <h3><a href="https://www.uwyo.edu/cedar/events/2021/symposium/rafer-cooley--summer21-cedar-artemis-poster.pdf" target="_blank" rel="noopener noreferrer">Embed playlist?</a></h3>
+            <p>Description...</p>
+            </div>
+            <!-- end .content-left -->
+            <div class="content-left">
+            <!-- <div class="embed"> = Responsive -->
+            <div class="embed">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL33XE2RJOwltz1wrf4OM1lpLWiDVIIqsT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- end .embed -->
+            </div>
+            <!-- end .content-left -->
+        </div>
+        <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-white">
+            <div class="wrap">
+                <div class="content-left">
+                  <h2>2021 Research Symposium</h2>
+                  <p>Description <a href="#slide=2">Return to CEDAR at a glance.</a></p>
+              <ul class="flexblock border">
+                <li>
+                  <div>
+                    <p>ARTEMIS</p>
+                  </div>
+                </li>
+                <li>
+                    <div>
+                      <p>Great Revolt</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <p>Hermes</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <p>ICS Module</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <p>Jangseung</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <p>Julia</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <p>Michelangelo</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <p>Orpheus</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <p>Summer Outreach</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <p>PacMan</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <p>Privacy-Preserving Graph CNN</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <p>Secret-Agent</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <p>SHARKS Obstacle Avoidance</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <p>Side Channel Attacks</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <p>Smart Wearables</p>
+                    </div>
+                  </li>
+              </ul>
+                </div>
+                <!-- end cntent-left -->
+                <div class="content-left">
+                  <!-- <div class="embed"> = Responsive -->
+                  <div class="embed">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aIuAhR2a7gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <!-- end .embed -->
+                </div>
+                <!-- end .content-left -->
+              </div>
+          </section>
+        
+        <!-- Symposium flexblock gallery option-->
+        <section class="bg-light">
+            <div class="wrap">
+              <h3>2021 Research Symposium</h3>
+              <p>We recently presented a full symposium to show off our current student-lead research projects! <a href="#slide=2">Return to CEDAR at a glance.</a></p>
+              <ul class="flexblock blink border">
+                <li>
+                    <a target="_blank" href="https://www.uwyo.edu/cedar/events/2021/symposium/rafer-cooley--summer21-cedar-artemis-poster.pdf" title="Malware Analysis at Scale with ElasticSearch">
+                        <figure>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/gTCw4a_QQ78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <figcaption>
+                        <h2>Malware Analysis at Scale with ElasticSearch</h2>
+                        <p>Click to view poster.</p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#" title="Great Revolt">
+                        <figure>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/5Bu7O2iFWcs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <figcaption>
+                        <h2>Great Revolt: Attacking AI Models for Vulnerability Analysis</h2>
+                        <p></p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.uwyo.edu/cedar/events/2021/symposium/rafer-cooley--summer21-cedar-artemis-poster.pdf" title="Malware Analysis at Scale with ElasticSearch">
+                        <figure>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/P-V1Hba1PG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <figcaption>
+                        <h2>Hermes: Developing Novel Attacks</h2>
+                        <p>Click to view poster.</p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.uwyo.edu/cedar/events/2021/symposium/rafer-cooley--summer21-cedar-artemis-poster.pdf" title="Malware Analysis at Scale with ElasticSearch">
+                        <figure>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/xe_a6zV_68Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <figcaption>
+                        <h2>Industrial Control System Outreach Training Development</h2>
+                        <p>Click to view poster.</p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.uwyo.edu/cedar/events/2021/symposium/rafer-cooley--summer21-cedar-artemis-poster.pdf" title="Malware Analysis at Scale with ElasticSearch">
+                        <figure>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/eQG0sKe8VXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <figcaption>
+                        <h2>Jangseung: Defense Against Adversarial Perturbations</h2>
+                        <p>Click to view poster.</p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.uwyo.edu/cedar/events/2021/symposium/rafer-cooley--summer21-cedar-artemis-poster.pdf" title="Malware Analysis at Scale with ElasticSearch">
+                        <figure>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/K7XiqtCXJO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <figcaption>
+                        <h2>Julia: A New Course with a New Language</h2>
+                        <p>Click to view poster.</p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.uwyo.edu/cedar/events/2021/symposium/rafer-cooley--summer21-cedar-artemis-poster.pdf" title="Malware Analysis at Scale with ElasticSearch">
+                        <figure>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PnPIKC5l9Cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <figcaption>
+                        <h2>Michelangelo: An AI Sculptor of Emergent Behavior</h2>
+                        <p>Click to view poster.</p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.uwyo.edu/cedar/events/2021/symposium/rafer-cooley--summer21-cedar-artemis-poster.pdf" title="Malware Analysis at Scale with ElasticSearch">
+                        <figure>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/a8JQkwwqwcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <figcaption>
+                        <h2>Orpheus: Prudent Vocal Authentication</h2>
+                        <p>Click to view poster.</p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.uwyo.edu/cedar/events/2021/symposium/rafer-cooley--summer21-cedar-artemis-poster.pdf" title="Malware Analysis at Scale with ElasticSearch">
+                        <figure>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/1WVONEFJ1LE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <figcaption>
+                        <h2>CEDAR Summer Outreach Camps and Programs</h2>
+                        <p>Click to view poster.</p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.uwyo.edu/cedar/events/2021/symposium/rafer-cooley--summer21-cedar-artemis-poster.pdf" title="Malware Analysis at Scale with ElasticSearch">
+                        <figure>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/0NIg4P0nJu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <figcaption>
+                        <h2>CEDAR PacMan: Maze Authentication Using Behavioral Biometrics</h2>
+                        <p>Click to view poster.</p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.uwyo.edu/cedar/events/2021/symposium/rafer-cooley--summer21-cedar-artemis-poster.pdf" title="Malware Analysis at Scale with ElasticSearch">
+                        <figure>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/JvdgnyV7sig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <figcaption>
+                        <h2>Privacy-Preserving Graph Convolutional Network with Partially Observed Sensitive Attributes</h2>
+                        <p>Click to view poster.</p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.uwyo.edu/cedar/events/2021/symposium/rafer-cooley--summer21-cedar-artemis-poster.pdf" title="Malware Analysis at Scale with ElasticSearch">
+                        <figure>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/YIibXf6Bp8w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <figcaption>
+                        <h2>Secret-Agent: Behavioral-Biometric Continuous Authentication</h2>
+                        <p>Click to view poster.</p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.uwyo.edu/cedar/events/2021/symposium/rafer-cooley--summer21-cedar-artemis-poster.pdf" title="Malware Analysis at Scale with ElasticSearch">
+                        <figure>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/jjjlnoQdhJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <figcaption>
+                        <h2>SHARKS Obstacle Avoidance</h2>
+                        <p>Click to view poster.</p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.uwyo.edu/cedar/events/2021/symposium/rafer-cooley--summer21-cedar-artemis-poster.pdf" title="Malware Analysis at Scale with ElasticSearch">
+                        <figure>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ayhksH8Aiqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <figcaption>
+                        <h2>Privacy Inference Under Side Channel Power Attacks</h2>
+                        <p>Click to view poster.</p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.uwyo.edu/cedar/events/2021/symposium/rafer-cooley--summer21-cedar-artemis-poster.pdf" title="Malware Analysis at Scale with ElasticSearch">
+                        <figure>
+                            
+                          <figcaption>
+                        <h2>Offensive and Defensive Analysis of Behavioral Biometrics on Smart Wearables</h2>
+                        <p>Click to view poster.</p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- .end .wrap -->
+          </section>
+
+        <!-- Upgraded lab -->
+        <section class="bg-white">
+            <div class="wrap">
+                <div class="content-left">
+                  <h2>New Lab</h2>
+                  <p>to a brand new super cool lab.... Our new home in UW's recently opened EERB building is a huge upgrade from our old CEDAR lab. <a href="#slide=2">Return to CEDAR at a glance.</a></p>
+              <ul class="flexblock specs">
+                <li>
+                  <div>
+                    <h2>
+                      <svg class="fa-desktop">
+                        <use xlink:href="#fa-desktop"></use>
+                      </svg>
+                      Upgraded workstations
+                    </h2>
+                    With adjustable desks and fancy computers...
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>
+                      <svg class="fa-chart-pie">
+                        <use xlink:href="#fa-chart-pie"></use>
+                      </svg>
+                      Permalinks
+                    </h2>
+                    Go to a specific slide. URL: #slide=number
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>
+                      <svg class="fa-text-height">
+                        <use xlink:href="#fa-text-height"></use>
+                      </svg>
+                      Vertical rhythm
+                    </h2>
+                    Use multiples of 8.
+                  </div>
+                </li>
+              </ul>
+                </div>
+                <!-- end .content-left -->
+                <div class="content-left">
+                  <!-- <div class="embed"> = Responsive -->
+                  <div class="embed">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aIuAhR2a7gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <!-- end .embed -->
+                </div>
+                <!-- end .content-left -->
+              </div>
+          </section>
+        <!-- Competitions -->
+        <section class="bg-secondary">
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap size-50 frame">
+              <h2 class="text-serif aligncenter">Competitions placeholder</h2>
+              <p class="text-symbols">* * *</p>
+              <p>... Participating in national CS competitions year round. <a href="#slide=2">Return to CEDAR at a glance.</a></p>
+            </div>
+          </section>
+        <!-- DATDA/WiCyS -->
+        <section class="bg-secondary">
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap size-50 frame">
+              <h2 class="text-serif aligncenter">Clubs placeholder</h2>
+              <p class="text-symbols">* * *</p>
+              <p>Defense Against the Dark Arts (DATDA) is an RSO focused on learning cybersecurity individual member projects and presentations. Topics usually discussed in the club include digital privacy, wifi encryption methods and activities, and various other networking concepts. Members also participate in online competitions to test and add new skills to their repertoire. <a href="#slide=2">Return to CEDAR at a glance.</a></p>
+            </div>
+          </section>
+        <!-- Volunteer -->
+        <section class="bg-secondary">
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap size-50 frame">
+              <h2 class="text-serif aligncenter">Volunteer placeholder</h2>
+              <p class="text-symbols">* * *</p>
+              <p>Description. <a href="#slide=2">Return to CEDAR at a glance.</a></p>
+            </div>
+          </section>
+        <!-- Partnerships -->
+        <section class="bg-secondary">
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap size-50 frame">
+              <h2 class="text-serif aligncenter">Partnership placeholder</h2>
+              <p class="text-symbols">* * *</p>
+              <p>Description. <a href="#slide=2">Return to CEDAR at a glance.</a></p>
+            </div>
+          </section>
+        <!-- Growth -->
+        <section class="bg-secondary">
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap size-50 frame">
+              <h2 class="text-serif aligncenter">Growth placeholder</h2>
+              <p class="text-symbols">* * *</p>
+              <p>Description. <a href="#slide=2">Return to CEDAR at a glance.</a></p>
+            </div>
+          </section>   
+        
+
+      </article>
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="{{ site.baseurl }}/js/webslides.js"></script>
+
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="{{ site.baseurl }}/js/svg-icons.js"></script>
+
+  </body>
+</html>
