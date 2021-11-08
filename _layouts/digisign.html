@@ -1,47 +1,581 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% include digihead.html %}
+    <!-- SEO -->
+    <title>CEDAR 2021 Virtual Poster</title>
+    <meta name="description" content="2021 highlights from the CEDAR lab!">
 
-  <body class="is-loading-0 is-loading-1 is-loading-2">
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
 
-		<!-- Main -->
-			<div id="main">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>CEDAR Lab</h1>
-						<p><b>C</b>ybersecurity <b>ED</b>ucation <b>A</b>nd <b>R</b>esearch Lab </p>
-						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="">UWCEDAR</span></a></li>
-							<li><a href="#" class="icon fa-link"><span class="">UWYO.EDU/CEDAR</span></a></li>
-						</ul>
-					</header>
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="{{ site.baseurl }}/css/webslides.css">
 
-				<!-- Thumbnail -->
-					<section id="thumbnails">
-			{% assign sorted_posters = site.categories.poster | sort: 'date' %}
-            {% for post in sorted_posters %}
-              {% if post.show == true %}
-                <article>
-                  <a class="thumbnail" href="{{ site.baseurl }}/digisign/img/{{ post.fullimg_url }}" data-position="left center"><img src="{{ site.baseurl }}/digisign/img/{{ post.thumb_url }}" alt="" /></a>
-                  <h2>{{ post.title }}</h2>
-                  <p>{{ post.abstract }}</p>
-                </article>
-              {% endif %}
-            {% endfor %}
-					</section>
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="{{ site.baseurl }}/css/svg-icons.css">
 
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
 
-			</div>
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="https://www.facebook.com/uwcedar"> <!-- EDIT -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="CEDAR Lab"> <!-- EDIT -->
+    <meta property="og:description" content="The University of Wyoming CEDAR lab's 2021 highlight reel!"> <!-- EDIT -->
+    <meta property="og:updated_time" content="2021-10-21T17:26:50"> <!-- EDIT -->
+    <meta property="og:image" content="{{ site.baseurl }}/images/preview.png" > <!-- EDIT -->
 
-		<!-- Scripts -->
-			<script src="{{ site.baseurl }}/js/jquery.min.js"></script>
-			<script src="{{ site.baseurl }}/js/skel.min.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="{{ site.baseurl }}/js/digisign.js"></script>
-      <!-- <script type="text/javascript">
-        setInterval(()=>{$('.nav-next').trigger('click')},8000)
-      </script> -->
-	</body>
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@uwcedar"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+    <meta name="twitter:title" content="UW Cedar"> <!-- EDIT -->
+    <meta name="twitter:description" content="The University of Wyoming CEDAR lab's 2021 highlight reel!"> <!-- EDIT -->
+    <meta name="twitter:image" content="{{ site.baseurl }}/images/preview.png"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="{{ site.baseurl }}/css/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="{{ site.baseurl }}/css/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="{{ site.baseurl }}/css/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="{{ site.baseurl }}/css/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="{{ site.baseurl }}/css/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="{{ site.baseurl }}/css/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="{{ site.baseurl }}/css/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  </head>
+  <body>
+    <header role="banner">
+      <nav role="navigation">
+        <p class="logo"><a href="{{ site.baseurl }}/index.html" title="UW Cedar">UW CEDAR</a></p>
+        <ul>
+          <li class="facebook">
+            <a rel="external" target="_blank" rel="noopener noreferrer" href="https://facebook.com/uwcedar" title="UW Cedar on Facebook">
+              <svg class="fa-github">
+                <use xlink:href="#fa-facebook"></use>
+              </svg>
+              <em>UW Cedar</em>
+            </a>
+          </li>
+          <li class="twitter">
+            <a rel="external" target="_blank" rel="noopener noreferrer" href="https://twitter.com/uwcedar" title="UW Cedar on Twitter">
+              <svg class="fa-twitter">
+                <use xlink:href="#fa-twitter"></use>
+              </svg>
+              <em>@uwcedar</em>
+            </a>
+          </li>
+          <li class="instagram">
+            <a rel="external" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/uwcedar/" title="UW Cedar on Instagram">
+              <svg class="fa-github">
+                <use xlink:href="#fa-instagram"></use>
+              </svg>
+              <em>UW Cedar</em>
+            </a>
+          </li>
+          <li class="LinkedIn">
+            <a rel="external" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/uwcedar/" title="UW Cedar on LinkedIn">
+              <svg class="fa-twitter">
+                <use xlink:href="#fa-linkedin"></use>
+              </svg>
+              <em>@uwcedar</em>
+            </a>
+          </li>
+          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <article id="webslides">
+
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <!-- Title Slide -->
+        <section class="bg-black-blue aligncenter">
+            <span class="background dark" style="background-image:url('{{ site.baseurl }}/images/movingbackground.gif')"></span>
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap">
+              <h1 class="text-landing">CEDAR Lab at a Glance</h1><br><br>
+              <p>
+                <a class="button ghost" href="#slide=2" title="Learn about CEDAR">
+                    Explore
+                    <svg class="fa-arrow-right">
+                    <use xlink:href="#fa-arrow-right"></use>
+                  </svg>
+                </a>
+              </p>
+              <p><em>Swipe right to left or use arrow keys to navigate.</em></p>
+              <p></p><p></p><p></p>
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        
+        <!-- Members-->
+        <section class="bg-black-blue">
+        <span class="background dark" style="background-image:url('{{ site.baseurl }}/images/movingbackground.gif')"></span>
+            <div class="wrap">
+                <div class="card-50 bg-trans-light">
+                <figure>
+                    <img src="{{ site.baseurl }}/images/members.gif" alt="Slide deck rotating through member images. All images show headshots of CEDAR members.">
+                    <!-- <figcaption>
+                    <a href="http://www.uwyo.edu/cedar/members/index.html" title="CEDAR Members and Bios" target="_blank" rel="noopener noreferrer">
+                        <svg class="fa-link">
+                        <use xlink:href="#fa-link"></use>
+                        </svg>
+                        CEDAR Members and Bios
+                    </a>
+                    </figcaption> -->
+                </figure>
+                <!-- end figure-->
+                <div class="flex-content">
+                    <h2>
+                    CEDAR Members
+                    </h2>
+                    <p>Director &mdash; <strong>Dr. Mike Borowczak</strong></p>
+                    <ul class="description">
+                    <li><strong class="text-label">Grad:</strong>9 doctoral students</li>
+                    <li><strong class="text-label">Undergrad:</strong>18 undergraduates</li>
+                    <li><strong class="text-label">Majors:</strong>6+ different majors!</li>
+                    </ul>
+                    <p>
+                    <a class="button ghost" href="#slide=3" title="Research">
+                        What do we do?
+                        <svg class="fa-arrow-right">
+                        <use xlink:href="#fa-arrow-right"></use>
+                        </svg>
+                    </a>
+                    </p>
+                    <p></p><p></p><p></p>
+                </div>
+                <!-- end .flex-content-->
+                </div>
+                <!-- .end .card50 -->
+            </div>
+            <!-- .end .wrap -->
+        </section>
+ 
+        <!-- Research-->
+        <section class="bg-black-blue">
+            <span class="background dark" style="background-image:url('{{ site.baseurl }}/images/movingbackground.gif')"></span>
+                <div class="wrap">
+                    <div class="card-50 bg-trans-light">
+                        <figure>
+                            <img src="{{ site.baseurl }}/images/research.gif" alt="Lightbulbs in a dark room coming on.">
+                            <!-- <figcaption>
+                            <a href="http://www.uwyo.edu/cedar/members/index.html" title="CEDAR Members and Bios" target="_blank" rel="noopener noreferrer">
+                                <svg class="fa-link">
+                                <use xlink:href="#fa-link"></use>
+                                </svg>
+                                CEDAR Members and Bios
+                            </a>
+                            </figcaption> -->
+                        </figure>
+                        <!-- <figure>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL33XE2RJOwltz1wrf4OM1lpLWiDVIIqsT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </figure> -->
+                    <!-- end figure-->
+                    <div class="flex-content">
+                        <h2>
+                        Research Projects
+                        </h2>
+                        <p>Director &mdash; <strong>Dr. Mike Borowczak</strong></p>
+                        <ul class="description">
+                        <li><strong class="text-label">Projects:</strong>16 current research projects</li>
+                        <li><strong class="text-label">Publications:</strong>100+ accepted works and presentations</li>
+                        <li>The CEDAR center is currently researching topics such as UAV swarms, machine learning security and privacy preservation, malware analysis, and continuous authentication.</li>
+                        </ul>
+                        <p>
+                        <a class="button ghost" href="#slide=4" title="2021 Cedar Symposium">
+                            We don't mean to brag, but...
+                            <svg class="fa-arrow-right">
+                            <use xlink:href="#fa-arrow-right"></use>
+                            </svg>
+                        </a>
+                        </p>
+                        <p></p><p></p><p></p>
+                    </div>
+                    <!-- end .flex-content-->
+                    </div>
+                    <!-- .end .card50 -->
+                </div>
+                <!-- .end .wrap -->
+        </section>
+
+        <!-- Research Symposium-->
+        <section class="bg-black-blue">
+        <span class="background dark" style="background-image:url('{{ site.baseurl }}/images/movingbackground.gif')"></span>
+            <div class="wrap">
+                <div class="card-50 bg-trans-light">
+                <figure>
+                    <img src="{{ site.baseurl }}/images/symposium.gif" alt="Slide deck rotating through symposium images. Most images show presenters in front of posters">
+                        <!-- <figcaption>
+                        <a href="http://www.uwyo.edu/cedar/members/index.html" title="CEDAR Members and Bios" target="_blank" rel="noopener noreferrer">
+                            <svg class="fa-link">
+                            <use xlink:href="#fa-link"></use>
+                            </svg>
+                            CEDAR Members and Bios
+                        </a>
+                        </figcaption> -->
+                </figure>
+                <!-- end figure-->
+                <div class="flex-content">
+                    <h2>
+                        2021 Symposium
+                    </h2>
+                    <p>was October 4, 2021 &mdash; <strong>EERB 228</strong></p>
+                    <p>
+                        In the <strong>2021 Cybersecurity Research Symposium</strong>, we showcased 15 current CEDAR research projects. 
+                    </p>
+                    <p>
+                        Don't worry, you don't need to go back in time to take a look &mdash; <a href="https://www.uwyo.edu/cedar/events/2021/cedar-symposium.html" target="_blank" rel="noopener noreferrer"> the symposium is still available virtually!</a> 
+                    </p>
+                    <p>
+                        <a class="button ghost" href="#slide=5" title="Student Organizations">
+                            We value our communities
+                            <svg class="fa-arrow-right">
+                            <use xlink:href="#fa-arrow-right"></use>
+                            </svg>
+                        </a>
+                        </p>
+                        <p></p><p></p><p></p>
+                    </div>
+                <!-- end .flex-content-->
+                </div>
+                <!-- .end .card50 -->
+            </div>
+            <!-- .end .wrap -->
+        </section>
+
+        <!-- Student Orgs -->
+        <section class="bg-black-blue">
+            <span class="background dark" style="background-image:url('{{ site.baseurl }}/images/movingbackground.gif')"></span>
+                <div class="wrap">
+                    <div class="card-50 bg-trans-light">
+                        <figure>
+                            <img src="{{ site.baseurl }}/images/DATDA-WiCyS.gif" alt="Shield WiCyS logo and unicorn chomping a keyboard DATDA logo.">
+                                <!-- <figcaption>
+                                <a href="http://www.uwyo.edu/cedar/members/index.html" title="CEDAR Members and Bios" target="_blank" rel="noopener noreferrer">
+                                    <svg class="fa-link">
+                                    <use xlink:href="#fa-link"></use>
+                                    </svg>
+                                    CEDAR Members and Bios
+                                </a>
+                                </figcaption> -->
+                        </figure>
+                    <!-- end figure-->
+                    <div class="flex-content">
+                        <h2>
+                        Student Organizations
+                        </h2>
+                        <p>CEDAR supports two <strong>extra curricular</strong> groups</p>
+                        <ul class="description">
+                            <li><strong class="text-label">WiCyS</strong>Wyoming Women in Cybersecurity Chapter</li>
+                            <li><strong class="text-label">DATDA</strong>Defense Against the Dark Arts</li>
+                        </ul>
+                        <p>
+                        <a class="button ghost" href="#slide=6" title="WiCyS">
+                            Introducing our newest club!
+                            <svg class="fa-arrow-right">
+                            <use xlink:href="#fa-arrow-right"></use>
+                            </svg>
+                        </a>
+                        </p>
+                        <p></p><p></p><p></p>
+                    </div>
+                    <!-- end .flex-content-->
+                    </div>
+                    <!-- .end .card50 -->
+                </div>
+                <!-- .end .wrap -->
+                </section>
+
+        <!-- WiCyS -->
+        <section class="bg-black-blue">
+            <span class="background dark" style="background-image:url('{{ site.baseurl }}/images/movingbackground.gif')"></span>
+                <div class="wrap">
+                    <div class="card-50 bg-trans-light">
+                        <figure>
+                            <img src="{{ site.baseurl }}/images/WiCyS.gif" alt="Logo made up of a shield with a lock and power button">
+                                <!-- <figcaption>
+                                <a href="http://www.uwyo.edu/cedar/members/index.html" title="CEDAR Members and Bios" target="_blank" rel="noopener noreferrer">
+                                    <svg class="fa-link">
+                                    <use xlink:href="#fa-link"></use>
+                                    </svg>
+                                    CEDAR Members and Bios
+                                </a>
+                                </figcaption> -->
+                        </figure>
+                    <!-- end figure-->
+                    <div class="flex-content">
+                        <h2>
+                        WiCyS
+                        </h2>
+                        <p>CEDAR's <strong>newest student group</strong></p>
+                        <p>WiCyS has arrived! The University of Wyoming Women in Cybersecurity Chapter (WiCyS) is a new club on campus dedicated to increasing diversity within cybersecurity. We aim to provide cybersecurity education content that is engaging and accessible. Each meeting includes a hands-on mini workshop that increases cyber prowess and refines multi-disciplinary skills.</p>
+                        <p>
+                        <a class="button ghost" href="#slide=7" title="DATDA">
+                            You're a wizard, Harry...
+                            <svg class="fa-arrow-right">
+                            <use xlink:href="#fa-arrow-right"></use>
+                            </svg>
+                        </a>
+                        </p>
+                        <p></p><p></p><p></p>
+                    </div>
+                    <!-- end .flex-content-->
+                    </div>
+                    <!-- .end .card50 -->
+                </div>
+                <!-- .end .wrap -->
+        </section>
+
+        <!-- DATDA -->
+        <section class="bg-black-blue">
+            <span class="background dark" style="background-image:url('{{ site.baseurl }}/images/movingbackground.gif')"></span>
+                <div class="wrap">
+                    <div class="card-50 bg-trans-light">
+                        <figure>
+                            <img src="{{ site.baseurl }}/images/DATDA.gif" alt="Logo with a rainbow unicorn eating a computer keyboard">
+                                <!-- <figcaption>
+                                <a href="http://www.uwyo.edu/cedar/members/index.html" title="CEDAR Members and Bios" target="_blank" rel="noopener noreferrer">
+                                    <svg class="fa-link">
+                                    <use xlink:href="#fa-link"></use>
+                                    </svg>
+                                    CEDAR Members and Bios
+                                </a>
+                                </figcaption> -->
+                        </figure>
+                    <!-- end figure-->
+                    <div class="flex-content">
+                        <h2>
+                        DATDA
+                        </h2>
+                        <p>CEDAR RSO &mdash; <strong>Defense Against the Dark Arts</strong></p>
+                        <p>Defense Against the Dark Arts (DATDA) is an RSO focused on learning cybersecurity individual member projects and presentations. Topics usually discussed in the club include digital privacy, wifi encryption methods and activities, and various other networking concepts. Members also participate in online competitions to test and add new skills to their repertoire.</p>
+                        <p>
+                        <a class="button ghost" href="#slide=8" title="Competitions">
+                            Speaking of competitions...
+                            <svg class="fa-arrow-right">
+                            <use xlink:href="#fa-arrow-right"></use>
+                            </svg>
+                        </a>
+                        </p>
+                        <p></p><p></p><p></p>
+                    </div>
+                    <!-- end .flex-content-->
+                    </div>
+                    <!-- .end .card50 -->
+                </div>
+                <!-- .end .wrap -->
+        </section>
+
+        <!-- Competitions -->
+        <section class="bg-black-blue">
+            <span class="background dark" style="background-image:url('{{ site.baseurl }}/images/movingbackground.gif')"></span>
+                <div class="wrap">
+                    <div class="card-50 bg-trans-light">
+                        <figure>
+                            <img src="{{ site.baseurl }}/images/comps.gif" alt="Lots of people focused on computers arranged in square pods in a big room">
+                                <!-- <figcaption>
+                                <a href="http://www.uwyo.edu/cedar/members/index.html" title="CEDAR Members and Bios" target="_blank" rel="noopener noreferrer">
+                                    <svg class="fa-link">
+                                    <use xlink:href="#fa-link"></use>
+                                    </svg>
+                                    CEDAR Members and Bios
+                                </a>
+                                </figcaption> -->
+                        </figure>
+                    <!-- end figure-->
+                    <div class="flex-content">
+                        <h2>
+                        Competitions
+                        </h2>
+                        <p>Each year, competitors rank in the top 10% of the nation.</p>
+                        <ul>
+                        <li>7 National Cyber League Tournaments</li>
+                        <li>2 years of MITRE's eCTF</li>
+                        <li>4 years of DoE's CyberForce</li>
+                        <li>Various other competitions focused on networking, medical technology, and other capture the flag style events</li>
+                        </ul>
+                        <p></p>
+                        <p>
+                        <a class="button ghost" href="#slide=9" title="Volunteer/Outreach">
+                            And during the summer?
+                            <svg class="fa-arrow-right">
+                            <use xlink:href="#fa-arrow-right"></use>
+                            </svg>
+                        </a>
+                        </p>
+                        <p></p><p></p><p></p>
+                    </div>
+                    <!-- end .flex-content-->
+                    </div>
+                    <!-- .end .card50 -->
+                </div>
+                <!-- .end .wrap -->
+        </section>
+
+        <!-- Volunteer -->
+        <section class="bg-black-blue">
+            <span class="background dark" style="background-image:url('{{ site.baseurl }}/images/movingbackground.gif')"></span>
+                <div class="wrap">
+                    <div class="card-50 bg-trans-light">
+                        <figure>
+                            <img src="{{ site.baseurl }}/images/volunteer.gif" alt="Pictures of CEDAR members teaching kids in classrooms and gyms.">
+                                <!-- <figcaption>
+                                <a href="http://www.uwyo.edu/cedar/members/index.html" title="CEDAR Members and Bios" target="_blank" rel="noopener noreferrer">
+                                    <svg class="fa-link">
+                                    <use xlink:href="#fa-link"></use>
+                                    </svg>
+                                    CEDAR Members and Bios
+                                </a>
+                                </figcaption> -->
+                        </figure>
+                        <!-- <figure>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/O8fMn2a1fqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </figure> -->
+                    <!-- end figure-->
+                    <div class="flex-content">
+                        <h2>
+                        Volunteer/Outreach
+                        </h2>
+                        <p><ul>
+                            <li><strong>GenCyber: </strong>Professional dev (PD) for teachers and students</li>
+                            <li><strong>WySTACK: </strong>Paid guided research for high school teachers</li>
+                            <li><strong>WySLICE: </strong>PD for elementary teachers and librarians</li>
+                            <li><strong>Code.org: </strong>Various PDs for K-12 teachers</li>
+                            <li><strong>TACoS: </strong>Summer camp for elementary students and teachers</li>
+                            <li><strong>Clockwise: </strong>Software bootcamp for WY college students</li>
+                            <li><strong>Kraken: </strong>Computer science camp (details coming soon)</li>
+                        </ul></p>
+                        <p>
+                        <a class="button ghost" href="#slide=10" title="Partnerships">
+                            How is this all possible?
+                            <svg class="fa-arrow-right">
+                            <use xlink:href="#fa-arrow-right"></use>
+                            </svg>
+                        </a>
+                        </p>
+                        <p></p><p></p><p></p>
+                    </div>
+                    <!-- end .flex-content-->
+                    </div>
+                    <!-- .end .card50 -->
+                </div>
+                <!-- .end .wrap -->
+        </section>
+
+        <!-- Partnerships -->
+        <section class="bg-black-blue">
+            <span class="background dark" style="background-image:url('{{ site.baseurl }}/images/movingbackground.gif')"></span>
+                <div class="wrap">
+                    <div class="card-50 bg-trans-light">
+                        <figure>
+                            <img src="{{ site.baseurl }}/images/partners.gif" alt="Spinning gears connecting CEDAR lab and INL to a brain and lightbulb">
+                                <!-- <figcaption>
+                                <a href="http://www.uwyo.edu/cedar/members/index.html" title="CEDAR Members and Bios" target="_blank" rel="noopener noreferrer">
+                                    <svg class="fa-link">
+                                    <use xlink:href="#fa-link"></use>
+                                    </svg>
+                                    CEDAR Members and Bios
+                                </a>
+                                </figcaption> -->
+                        </figure>
+                    <!-- end figure-->
+                    <div class="flex-content">
+                        <h2>
+                        Partnerships
+                        </h2>
+                        <p></p>
+                        <p>The CEDAR lab works with a variety of partners including INL, DoE, DoD, DHS, NSA, NSF, Code.org, TEALs, and many others to provide funding, research support, teaching opportunities, and paid internships that benefits our students and the students, teachers, and industry professionals they work with.</p>
+                        <p>
+                        <a class="button ghost" href="#slide=11" title="We're Growing!">
+                            Is there more?
+                            <svg class="fa-arrow-right">
+                            <use xlink:href="#fa-arrow-right"></use>
+                            </svg>
+                        </a>
+                        </p>
+                        <p></p><p></p><p></p>
+                    </div>
+                    <!-- end .flex-content-->
+                    </div>
+                    <!-- .end .card50 -->
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+        <!-- We're Growing! -->
+        <section class="bg-black-blue">
+            <span class="background dark" style="background-image:url('{{ site.baseurl }}/images/movingbackground.gif')"></span>
+                <div class="wrap">
+                    <div class="card-50 bg-trans-light">
+                    <figure>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/aIuAhR2a7gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </figure>
+                    <!-- end figure-->
+                    <div class="flex-content">
+                        <h2>
+                        We're Growing!
+                        </h2>
+                        <p>We outgrew our old space and moved into the new <strong>Engineering Education and Research Building</strong></p>
+                        <ul>
+                            <li>19 desktop workstations</li>
+                            <li>4 hardware workbenches</li>
+                            <li>2 dedicated virtual meeting spaces</li>
+                            <li>8+ GPU server rack for AI/ML</li>
+                            <li>3 Prusa Mk3S+ 3D printers</li>
+                        </ul>
+                        <p></p>
+                        <p>We're always looking for more researchers!</p>
+                        <p>
+                            <a class="button ghost" href="http://www.uwyo.edu/cedar/" title="CEDAR Homepage" target="_blank" rel="noopener noreferrer">
+                                Learn More!
+                            </a>
+                            <a class="button ghost" href="#slide=1" title="Back to the start">
+                            Go Pokes!
+                            <svg class="fa-repeat">
+                            <use xlink:href="#fa-repeat"></use>
+                            </svg>
+                            </a>
+                        </p>
+                        <p></p><p></p><p></p>
+                    </div>
+                    <!-- end .flex-content-->
+                    </div>
+                    <!-- .end .card50 -->
+                </div>
+                <!-- .end .wrap -->
+            </section>
+          
+        
+
+      </article>
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="{{ site.baseurl }}/js/webslides.js"></script>
+
+    <!-- Add parameter to WebSlides for automatic advancement { autoslide: 15000 } -->
+    <script>
+      window.ws = new WebSlides({ autoslide: 15000 });
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="{{ site.baseurl }}/js/svg-icons.js"></script>
+
+  </body>
 </html>
