@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
 
     <!-- CSS Base -->
-    <link rel="stylesheet" type='text/css' media='all' href="{{ site.baseurl }}/css/webslides.css">
+    <link rel="stylesheet" type='text/css' media='all' href="{{ site.baseurl }}/css/webslidesdigisign.css">
 
     <!-- Optional - CSS SVG Icons (Font Awesome) -->
     <link rel="stylesheet" type="text/css" media="all" href="{{ site.baseurl }}/css/svg-icons.css">
@@ -576,6 +576,17 @@
 
     <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
     <script defer src="{{ site.baseurl }}/js/svg-icons.js"></script>
+
+	<!-- Code for screen size -->
+	<script>
+		var win = window,
+		doc = document,
+		docElem = doc.documentElement,
+		body = doc.getElementsByTagName('body')[0],
+		x = win.innerWidth || docElem.clientWidth || body.clientWidth,
+		y = win.innerHeight|| docElem.clientHeight|| body.clientHeight;
+	alert(x + ' × ' + y);
+	</script>
 
   </body>
 </html>
