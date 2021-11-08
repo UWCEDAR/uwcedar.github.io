@@ -50,6 +50,20 @@
     <!-- Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#333333">
+	
+	<!-- Auto refresh and send Google Analytics -->
+	<meta http-equiv="refresh" content="1500">
+
+	<noscript><link rel="stylesheet" href="{{ site.baseurl }}/css/noscript.css" /></noscript>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5GF9LKJV5Y"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+  
+	  gtag('config', 'G-5GF9LKJV5Y');
+	</script>
   </head>
   <body>
     <header role="banner">
