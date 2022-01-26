@@ -5,6 +5,6 @@ categories: [members,undergraduate_student]
 joined_date: 2021-05-01
 projects: ["ICS Security"]
 interest_statement: "Statement"
-bootstrap_card_img_url: "/taylor-laforce-bootstrapcard.jpg"
+bootstrap_card_img_url: "cedar-logo-placeholder-bootstrapcard"
 show: true
 ---
